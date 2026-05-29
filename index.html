@@ -3,141 +3,155 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Intel: Sustainability Through the Ages</title>
+  <meta name="description" content="A beginner-friendly Intel history timeline showcasing key milestones, breakthroughs, and sustainability efforts." />
+  <title>Intel Through the Years</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-
-  <!-- Header / Hero Section -->
-  <header>
-    <div>
-      <!-- Ask Copilot to teach you about `.svg`. 🙂 You'll need to resize the logo with CSS. -->
-      <img src="img/intel-header-logo.svg" alt="Intel Logo" />
-      <!-- Main Heading -->
-      <h1>
-        Sustainability Through the Ages
-      </h1>
-
-      <!-- Subheading / Description -->
-      <p>
-        Explore Intel's journey through time, discovering how our commitment
-        to innovation has shaped a more sustainable future for technology 
-        and our planet.
+  <header class="hero">
+    <div class="hero-copy">
+      <img src="img/intel-header-logo.svg" alt="Intel logo" class="hero-logo" />
+      <p class="eyebrow">History and Innovation</p>
+      <h1>Intel Through the Years</h1>
+      <p class="hero-text">
+        From the first commercial microprocessor to modern sustainability goals,
+        Intel has helped shape the world of computing and technology.
       </p>
     </div>
   </header>
 
-  <!-- Timeline Cards Section -->
-  <section>
+  <main>
+    <section class="intro-block">
+      <div class="intro-copy">
+        <h2>Building the future of computing</h2>
+        <p>
+          Intel started in 1968 and quickly became a leader in semiconductors.
+          The company introduced processors that powered personal computers,
+          changed how software was built, and helped define modern digital life.
+        </p>
+      </div>
+    </section>
 
-    <!-- Card 1: 1968 -->
-    <div>
-      <h2>1968</h2>
-      <h3>Intel Founded</h3>
-      <!-- Add image -->
-      <p>
-        Robert Noyce and Gordon Moore rename the newly formed company 
-        NM Electronics to Intel Corporation, laying the foundation for 
-        decades of technological innovation.
-      </p>
-    </div>
+    <section class="timeline-section" aria-label="Intel timeline">
+      <div class="section-heading">
+        <p class="eyebrow">Major milestones</p>
+        <h2>Significant events in Intel's history</h2>
+      </div>
 
-    <!-- Card 2: 1971 -->
-    <div>
-      <h2>1971</h2>
-      <h3>First Microprocessor</h3>
-      <!-- Add image -->
-      <p>
-        Intel debuts the 4004, the world's first commercial microprocessor, 
-        igniting the microprocessor revolution and propelling the future 
-        of computing devices.
-      </p>
-    </div>
+      <div class="timeline-grid">
+        <article class="timeline-card">
+          <img src="img/1968_founders.png" alt="Silicon chips and manufacturing" class="event-image" />
+          <div class="timeline-copy">
+            <p class="year">1968</p>
+            <h3>Intel is founded</h3>
+            <p>
+              Robert Noyce and Gordon Moore helped launch Intel Corporation,
+              beginning a new chapter in semiconductor innovation.
+            </p>
+          </div>
+        </article>
 
-    <!-- Card 3: 1978 -->
-    <div>
-      <h2>1978</h2>
-      <h3>8086 Processor</h3>
-      <!-- Add image -->
-      <p>
-        Launch of the 8086 processor, establishing the x86 architecture 
-        that drives countless PCs and servers in the modern era.
-      </p>
-    </div>
+        <article class="timeline-card">
+          <img src="img/1971_4004.png" alt="Early microprocessor development" class="event-image" />
+          <div class="timeline-copy">
+            <p class="year">1971</p>
+            <h3>The 4004 microprocessor</h3>
+            <p>
+              Intel introduced the 4004, the world's first commercial
+              microprocessor, paving the way for programmable computing.
+            </p>
+          </div>
+        </article>
 
-    <!-- Card 4: 1985 -->
-    <div>
-      <h2>1985</h2>
-      <h3>386 Processor</h3>
-      <!-- Add image -->
-      <p>
-        Intel introduces the 386 processor with 32-bit architecture, 
-        ushering in a new era of performance and multitasking for 
-        personal computers.
-      </p>
-    </div>
+        <article class="timeline-card">
+          <img src="img/1978_8086.png" alt="Computer processor technology" class="event-image" />
+          <div class="timeline-copy">
+            <p class="year">1978</p>
+            <h3>8086 and the x86 family</h3>
+            <p>
+              The 8086 processor helped establish the x86 architecture, which
+              became a foundation for modern PCs and servers.
+            </p>
+          </div>
+        </article>
 
-    <!-- Card 5: 2006 -->
-    <div>
-      <h2>2006</h2>
-      <h3>Peak GHG Emissions</h3>
-      <!-- Add image -->
-      <p>
-        This year marks Intel's highest annual greenhouse gas emissions 
-        for operations. Over subsequent years, Intel invests heavily in 
-        chemical abatement, renewable energy, and energy-efficient 
-        manufacturing to reverse this trend.
-      </p>
-    </div>
+        <article class="timeline-card">
+          <img src="img/1985_386.png" alt="PC processor innovation" class="event-image" />
+          <div class="timeline-copy">
+            <p class="year">1985</p>
+            <h3>Intel 386 processor</h3>
+            <p>
+              The 386 processor brought 32-bit computing to personal
+              computers, improving speed, memory handling, and multitasking.
+            </p>
+          </div>
+        </article>
 
-    <!-- Card 6: 2020 -->
-    <div>
-      <h2>2020</h2>
-      <h3>RISE Strategy</h3>
-      <!-- Add image -->
-      <p>
-        Intel launches its RISE (Responsible, Inclusive, Sustainable, 
-        Enabling) strategy and 2030 goals, aiming to drive industry-wide 
-        progress on climate action, water stewardship, and waste reduction.
-      </p>
-    </div>
+        <article class="timeline-card">
+          <img src="img/1993_pentium.png" alt="Processor performance era" class="event-image" />
+          <div class="timeline-copy">
+            <p class="year">1993</p>
+            <h3>Pentium arrives</h3>
+            <p>
+              The Pentium processor became a landmark product in Intel's rise,
+              helping the company become a household name in computing.
+            </p>
+          </div>
+        </article>
 
-    <!-- Card 7: 2022 -->
-    <div>
-      <h2>2022</h2>
-      <h3>Net-Zero By 2040</h3>
-      <!-- Add image -->
-      <p>
-        Intel announces its commitment to achieve net-zero greenhouse 
-        gas emissions (Scope 1 and 2) across its global operations 
-        by 2040, building on years of environmental initiatives.
-      </p>
-    </div>
+        <article class="timeline-card">
+          <img src="img/2000_intel_inside.png" alt="Marketing the Intel brand" class="event-image" />
+          <div class="timeline-copy">
+            <p class="year">2000</p>
+            <h3>Intel Inside campaign</h3>
+            <p>
+              Intel's marketing pushed the “Intel Inside” message into homes,
+              making the company a symbol of trusted computer performance.
+            </p>
+          </div>
+        </article>
 
-    <!-- Card 8: 2023 -->
-    <div>
-      <h2>2023</h2>
-      <h3>Renewable Electricity</h3>
-      <!-- Add image -->
-      <p>
-        The company achieves 99% renewable electricity usage worldwide, 
-        helping to drastically lower carbon emissions and driving progress 
-        toward Intel's long-term sustainability goals.
-      </p>
-    </div>
+        <article class="timeline-card">
+          <img src="img/2006_core.png" alt="Core architecture and innovation" class="event-image" />
+          <div class="timeline-copy">
+            <p class="year">2006</p>
+            <h3>Core architecture breakthrough</h3>
+            <p>
+              Intel's Core platform helped redefine performance for laptops,
+              desktops, and data centers with improved efficiency and speed.
+            </p>
+          </div>
+        </article>
 
-    <!-- Card 9: 2024 -->
-    <div>
-      <h2>2024</h2>
-      <h3>Sustainability Summit</h3>
-      <!-- Add image -->
-      <p>
-        Intel hosts its first Sustainability Summit, uniting suppliers, 
-        government officials, and industry leaders to collaborate on 
-        next-generation sustainable semiconductor manufacturing.
-      </p>
-    </div>
-  </section>
-  <p>Scroll to view timeline | Hover over cards to learn more!</p>
+        <article class="timeline-card">
+          <img src="img/2020_rise.png" alt="Sustainability and climate action" class="event-image" />
+          <div class="timeline-copy">
+            <p class="year">2020</p>
+            <h3>RISE strategy and sustainability</h3>
+            <p>
+              Intel launched its RISE strategy, focusing on responsible,
+              inclusive, sustainable, and enabling innovation for the future.
+            </p>
+          </div>
+        </article>
+
+        <article class="timeline-card">
+          <img src="img/2024_sustainability.png" alt="Renewable energy and climate goals" class="event-image" />
+          <div class="timeline-copy">
+            <p class="year">2024</p>
+            <h3>Cleaner operations and long-term goals</h3>
+            <p>
+              Intel continued its push toward cleaner manufacturing, renewable
+              electricity, and ambitious climate goals, including net-zero.
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p class="timeline-help">Scroll to navigate Intel's timeline! | Hover over any card to learn more!</p>
+  </footer>
 </body>
 </html>
