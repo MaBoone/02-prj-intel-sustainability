@@ -2,12 +2,54 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
   color: #1f2430;
   background: #f4f6fb;
-  line-height: 1.5;
+  line-height: 1.6;
+  text-align: start;
+}
+
+ a,
+button,
+input {
+  transition: outline-color 0.2s ease, background-color 0.2s ease, color 0.2s ease;
+}
+
+a {
+  color: #0056a8;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+a:hover,
+a:focus-visible {
+  color: #003a6b;
+}
+
+:focus-visible {
+  outline: 3px solid #ffbf47;
+  outline-offset: 3px;
+}
+
+.skip-link {
+  position: absolute;
+  left: 1rem;
+  top: -3rem;
+  background: #0b1f33;
+  color: #fff;
+  padding: 0.6rem 0.9rem;
+  border-radius: 8px;
+  z-index: 1000;
+}
+
+.skip-link:focus {
+  top: 1rem;
 }
 
 .hero {
@@ -117,7 +159,7 @@ main {
   border-radius: 18px;
   overflow: hidden;
   box-shadow: 0 10px 25px rgba(24, 39, 61, 0.12);
-  border-left: 5px solid #0071c5;
+  border-inline-start: 5px solid #0071c5;
   scroll-snap-align: start;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
@@ -189,11 +231,66 @@ main {
   transform: translateY(0);
 }
 
+.timeline-note {
+  margin: 0.5rem 0 1.25rem;
+}
+
 .timeline-help {
   margin: 0;
   text-align: center;
-  color: #fff;
+  color: #17324d;
   font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.newsletter-section {
+  margin-bottom: 2rem;
+}
+
+.newsletter-card {
+  background: #fff;
+  border-radius: 18px;
+  padding: 1.25rem 1.5rem;
+  box-shadow: 0 10px 25px rgba(24, 39, 61, 0.12);
+}
+
+.newsletter-card h2 {
+  margin: 0 0 0.5rem;
+  font-size: 1.5rem;
+}
+
+.newsletter-card p {
+  margin: 0 0 1rem;
+  color: #52627a;
+}
+
+.newsletter-form {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.newsletter-form input {
+  flex: 1 1 260px;
+  min-height: 44px;
+  padding: 0.75rem 0.9rem;
+  border: 1px solid #c7d3e6;
+  border-radius: 10px;
+  font: inherit;
+}
+
+.newsletter-form button {
+  border: none;
+  border-radius: 10px;
+  padding: 0.75rem 1rem;
+  background: #005da8;
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.newsletter-form button:hover {
+  background: #005da8;
 }
 
 .site-footer {
